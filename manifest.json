@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "Simple AI Summary",
+    "version": "1.0",
+    "description": "Simple, private text summarizer. Supports ChatGPT, Gemini, Claude, Perplexity and custom providers. Open source. No tracking, no middleman",
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://www.perplexity.ai/*",
+        "https://claude.ai/*"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "action": {},
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "simple ai summary @ rokas.dev"
+        }
+    }
+}
