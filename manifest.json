@@ -33,7 +33,12 @@
     },
     "browser_specific_settings": {
         "gecko": {
-            "id": "simple ai summary @ rokas.dev"
+            "id": "simple-ai-summary@rokas.dev",
+            "data_collection_permissions": {
+                "required": [
+                    "none"
+                ]
+            }
         }
     }
 }
